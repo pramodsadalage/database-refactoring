@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+forge "https://forge.puppetlabs.com"
+
+#mod "puppetlabs/java", "1.1.2"
+#mod "puppetlabs/postgresql", "4.1.0"

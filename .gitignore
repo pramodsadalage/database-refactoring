@@ -1,0 +1,14 @@
+# ignore oracle rpms
+**/*.rpm
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp/*
+**/*.keep
+.vagrant
+puppet/.tmp
+*.swp
+*.swo
+REVISION
+*.war
+.DS_Store
