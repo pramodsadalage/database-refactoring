@@ -1,0 +1,70 @@
+<project name="EvolveDB" default="migrate" basedir="." xmlns:flyway="antlib:org.flywaydb.ant">
+    <description>Ant build file for Evolving Databases</description>
+
+    <tstamp>
+        <format locale="en_us" pattern="yyyy/MM/d hh:mm:ss" property="time"/>
+    </tstamp>
+
+    <property file="${basedir}/build.properties"/>
+    <property name="db.lib" value="libs"/>
+    <property name="jdbc.driver.classpath" value="${db.lib}/ojdbc7.jar"/>
+    <!-- <property name="flyway.schemas" value="${db.username}"/> -->
+    <property name="flyway.locations" value="filesystem:db/migrations"/>
+    <property name="flyway.sqlMigrationPrefix" value=""/>
+    <property name="flyway.sqlMigrationSeparator" value="_"/>
+    <property name="flyway.table" value="DB_VERSION"/>
+    <property name="flyway.baselineOnMigrate" value="false"/>
+
+  <path id="flyway.classpath">
+      <fileset dir="${db.lib}" includes="*.jar"/>
+  </path>
+
+  <taskdef resource="org/flywaydb/ant/antlib.xml" uri="antlib:org.flywaydb.ant">
+    <classpath>
+        <pathelement location="${db.lib}/flyway-core-4.0.3.jar"/>
+        <pathelement location="${db.lib}/flyway-ant-4.0.3.jar"/>
+    </classpath>
+  </taskdef>
+
+  <target name="createschema" description="create a schema as defined in the user properties">
+    <echo message="Admin UserName: ${db.system.username}"/>
+    <echo message="Creating Schema: ${db.username}"/>
+    <sql password="${db.system.password}" userid="${db.system.username}" url="${db.url}" driver="${db.driver.name}"
+         classpath="${jdbc.driver.classpath}">
+        CREATE USER ${db.username} IDENTIFIED BY ${db.password} DEFAULT TABLESPACE ${db.tablespace};
+        GRANT CONNECT,UNLIMITED TABLESPACE,RESOURCE TO ${db.username};
+        GRANT CREATE VIEW TO ${db.username};
+        ALTER USER ${db.username} DEFAULT ROLE ALL;
+    </sql>
+  </target>
+
+  <target name="dropschema">
+      <echo message="Admin UserName: ${db.system.username}"/>
+      <echo message="Working UserName: ${db.username}"/>
+      <sql password="${db.system.password}" userid="${db.system.username}" url="${db.url}" driver="${db.driver.name}"
+           classpath="${jdbc.driver.classpath}">
+          DROP USER ${db.username} cascade ;
+      </sql>
+  </target>
+
+  <target name="dbcode">
+    <execute_user_sql src="db/code/triggers.sql" terminator="/"/>
+  </target>
+
+  <target name="testdata">
+    <execute_user_sql src="db/testdata/*.sql" terminator="/"/>
+  </target>
+
+  <target name="migrate">
+      <flyway:migrate password="${db.password}" url="${db.url}" user="${db.username}"> </flyway:migrate>
+  </target>
+
+  <macrodef name="execute_user_sql">
+   <attribute name="src"/>
+   <attribute name="terminator" default="/"/>
+    <sequential>
+     <sql classpath="${jdbc.driver.classpath}" driver="${db.driver.name}" url="${db.url}" userid="${db.username}"
+       password="${db.password}" src="@{src}" onerror="abort" delimiter="@{terminator}"/>
+    </sequential>
+  </macrodef>
+</project>

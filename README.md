@@ -42,9 +42,11 @@
 * now run `. /u01/app/oracle/product/11.2.0/xe/bin/oracle_env.sh`
 * `sqlplus system/refacTor1` will give you access to the database
 * Optional steps
-  * `create user "username" identified by "some-good-password"`
-  * `grant create session, dba to "username"`
-
+  * `CREATE USER some-user-name IDENTIFIED BY some-good-password;`
+  * `GRANT CONNECT,UNLIMITED TABLESPACE,RESOURCE TO some-user-name;`
+  * `GRANT CREATE VIEW TO some-user-name;`
+  * `ALTER USER some-user-name DEFAULT ROLE ALL;`
+  
 
 ### Dependencies
 
