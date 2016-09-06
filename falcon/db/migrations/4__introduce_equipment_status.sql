@@ -19,11 +19,24 @@ ALTER TABLE equipment ADD equipmentstatusid NUMBER(18) NULL
 
 UPDATE equipment SET equipmentstatusid =
   (SELECT equipmentstatusid FROM equipmentstatus WHERE name = 'New')
-  WHERE equipmentstatusid IS NULL
+  WHERE UPPER(equipmentstatus) LIKE '%NEW%'
 ;
+
+UPDATE equipment SET equipmentstatusid =
+  (SELECT equipmentstatusid FROM equipmentstatus WHERE name = 'Used')
+  WHERE UPPER(equipmentstatus) LIKE '%USED%'
+;
+
+UPDATE equipment SET equipmentstatusid =
+  (SELECT equipmentstatusid FROM equipmentstatus WHERE name = 'Used')
+  WHERE equipmentstatus IS NOT NULL AND equipmentstatusid IS NULL
+;
+
 ALTER TABLE equipment MODIFY equipmentstatusid NOT NULL;
 
 ALTER TABLE equipment
   ADD (CONSTRAINT fk_equipment_equipmentstatus FOREIGN KEY (equipmentstatusid)
   REFERENCES equipmentstatus)
 ;
+
+--Drop equipmentstatus

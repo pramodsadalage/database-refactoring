@@ -28,17 +28,25 @@ INSERT INTO manufacturer (manufacturerid, name) VALUES ( s_manufacturer.nextval,
 INSERT INTO manufacturer (manufacturerid, name) VALUES ( s_manufacturer.nextval, 'OTHER' )
 ;
 
-
+--Add reference and migrate data
 ALTER TABLE equipment ADD manufacturerid NUMBER(18) NULL
+;
+
+UPDATE equipment SET manufacturerid =
+  (SELECT manufacturerid FROM manufacturer WHERE name = equipment.manufacturer)
+  WHERE manufacturerid IS NULL
 ;
 
 UPDATE equipment SET manufacturerid =
   (SELECT manufacturerid FROM manufacturer WHERE name = 'OTHER')
   WHERE manufacturerid IS NULL
 ;
+
 ALTER TABLE equipment MODIFY manufacturerid NOT NULL;
 
 ALTER TABLE equipment
   ADD (CONSTRAINT fk_equipment_manufacturer FOREIGN KEY (manufacturerid)
   REFERENCES MANUFACTURER)
 ;
+
+--Drop manufacturer from equipment?

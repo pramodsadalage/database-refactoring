@@ -10,6 +10,8 @@ CREATE TABLE equipment (
   acquired_from VARCHAR2(30) NOT NULL,
   serial_NUMBER VARCHAR2(60) NOT NULL,
   notes VARCHAR2(4000),
+  manufacturer VARCHAR2(30) NOT NULL,
+  equipmentstatus VARCHAR2(10) NOT NULL,
   CONSTRAINT pk_equipment
          PRIMARY KEY (equipmentid)
 )
@@ -17,4 +19,80 @@ CREATE TABLE equipment (
 
 CREATE SEQUENCE s_equipment
     START WITH 1000000
+;
+
+--SAMPLE Data to so that refactorings make sense
+
+INSERT INTO equipment (
+equipmentid,description,starting_miles,service_interval_miles,service_interval_duration,
+service_interval_duration_unit,acquired_date,acquired_by,acquired_from,
+serial_number,manufacturer,equipmentstatus,notes
+)
+VALUES
+(s_equipment.nextval,'JCB radial lift 135 skid steer', 18,5000, 3, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'JDANIEL','MANUFACTURER','55SWF4KB5GU167138','JCB','New',
+'The small platform JCB radial lift 135 skid steer,side door entry'
+)
+;
+INSERT INTO equipment (
+equipmentid,description,starting_miles,service_interval_miles,service_interval_duration,
+service_interval_duration_unit,acquired_date,acquired_by,acquired_from,
+serial_number,manufacturer,equipmentstatus,notes
+)
+VALUES
+(s_equipment.nextval,'Core IC Cushion Forklift', 7,4000, 3, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'RGRAHAM','MANUFACTURER','1FT8W3DT6GEC67986','Toyota','New',
+'Toyota’s Core IC Cushion Forklift is one of the most popular forklifts in North America. Warehousing and distribution applications'
+)
+;
+INSERT INTO equipment (
+equipmentid,description,starting_miles,service_interval_miles,service_interval_duration,
+service_interval_duration_unit,acquired_date,acquired_by,acquired_from,
+serial_number,manufacturer,equipmentstatus,notes
+)
+VALUES
+(s_equipment.nextval,'VNL 430 The specialty haul sleeper', 34,10000, 3, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'PMARKER','MANUFACTURER','4V4NC9EH1HN971656','Volvo','New',
+'A versatile and affordable sleeper tractor, the VNL 430 is specially designed for the demands of long-distance bulk haul and specialty applications.'
+)
+;
+INSERT INTO equipment (
+equipmentid,description,starting_miles,service_interval_miles,service_interval_duration,
+service_interval_duration_unit,acquired_date,acquired_by,acquired_from,
+serial_number,manufacturer,equipmentstatus,notes
+)
+VALUES
+(s_equipment.nextval,'340AJ Articulating Boom Lifts', 4,1000, 6, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'CDAVIS','MANUFACTURER','19XFC2F53GE057360','JLG','New',
+'Environmentally-friendly Tier 4 diesel engine, Industry-leading terrainability'
+)
+;
+INSERT INTO equipment (
+equipmentid,description,starting_miles,service_interval_miles,service_interval_duration,
+service_interval_duration_unit,acquired_date,acquired_by,acquired_from,
+serial_number,manufacturer,equipmentstatus,notes
+)
+VALUES
+(s_equipment.nextval,'HL 757-9A', 40,3000, 6, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'ASLOCKET','MANUFACTURER','5NPD84LF8HH019461','Hyundai','New',
+'Proven, reliable, fuel efficient, low emission, low noise Cummins Tier 4 Interim & EU Stage IIIB
+QSB6.7 engine'
+)
+;
+INSERT INTO equipment (
+equipmentid,description,starting_miles,service_interval_miles,service_interval_duration,
+service_interval_duration_unit,acquired_date,acquired_by,acquired_from,
+serial_number,manufacturer,equipmentstatus,notes
+)
+VALUES
+(s_equipment.nextval,'HL 757-9A', 40,3000, 6, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'ASLOCKET','MANUFACTURER','5NPD84LF8HH019461','Hyundai','New',
+'Proven, reliable, fuel efficient, low emission, low noise Cummins Tier 4 Interim & EU Stage IIIB
+QSB6.7 engine'
+)
+;
+
+INSERT INTO equipment (
+equipmentid,description,starting_miles,service_interval_miles,service_interval_duration,
+service_interval_duration_unit,acquired_date,acquired_by,acquired_from,
+serial_number,manufacturer,equipmentstatus,notes
+)
+VALUES
+(s_equipment.nextval,'M&HCV CONSTRUCK', 440,10000, 6, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'ASLOCKET','MANUFACTURER','3VW2B7AJ4HM211291','Tata Motos','New',
+'A host of heavy duty features that ensure excellent performance under difficult conditions and significant reduction in cost of ownership.'
+)
 ;

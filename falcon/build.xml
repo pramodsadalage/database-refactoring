@@ -48,23 +48,26 @@
   </target>
 
   <target name="dbcode">
-    <execute_user_sql src="db/code/triggers.sql" terminator="/"/>
+      <sql driver="${db.driver.name}"
+           url="${db.url}"
+           userid="${db.username}"
+           password="${db.password}"
+           classpath="${jdbc.driver.classpath}"
+           delimiter="/">
+          <fileset dir="db/code" includes="*.sql"/>
+      </sql>
   </target>
-
   <target name="testdata">
-    <execute_user_sql src="db/testdata/*.sql" terminator="/"/>
+      <sql driver="${db.driver.name}"
+           url="${db.url}"
+           userid="${db.username}"
+           password="${db.password}"
+           classpath="${jdbc.driver.classpath}" delimiter=";">
+          <fileset dir="db/testdata" includes="*.sql"/>
+      </sql>
   </target>
 
   <target name="migrate">
       <flyway:migrate password="${db.password}" url="${db.url}" user="${db.username}"> </flyway:migrate>
   </target>
-
-  <macrodef name="execute_user_sql">
-   <attribute name="src"/>
-   <attribute name="terminator" default="/"/>
-    <sequential>
-     <sql classpath="${jdbc.driver.classpath}" driver="${db.driver.name}" url="${db.url}" userid="${db.username}"
-       password="${db.password}" src="@{src}" onerror="abort" delimiter="@{terminator}"/>
-    </sequential>
-  </macrodef>
 </project>
