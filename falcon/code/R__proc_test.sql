@@ -1,0 +1,21 @@
+CREATE OR REPLACE FUNCTION istodaymonday
+ RETURN BOOLEAN
+ IS
+   today_day VARCHAR(20) :=NULL;
+ BEGIN
+     SELECT TO_CHAR(SYSDATE, 'DAY') INTO today_day FROM DUAL;
+     IF(today_day = 'MONDAY') THEN
+     BEGIN
+     	RETURN TRUE;
+     END;
+     ELSE
+      RETURN FALSE;
+     END IF;
+     EXCEPTION
+         WHEN NO_DATA_FOUND THEN
+     BEGIN
+     	RETURN FALSE;
+     END;
+     WHEN OTHERS THEN RAISE;
+ END;
+/

@@ -80,9 +80,8 @@ service_interval_duration_unit,acquired_date,acquired_by,acquired_from,
 serial_number,manufacturer,equipmentstatus,notes
 )
 VALUES
-(s_equipment.nextval,'HL 757-9A', 40,3000, 6, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'ASLOCKET','MANUFACTURER','5NPD84LF8HH019461','Hyundai','New',
-'Proven, reliable, fuel efficient, low emission, low noise Cummins Tier 4 Interim & EU Stage IIIB
-QSB6.7 engine'
+(s_equipment.nextval,'136Li', 0,0, 6, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'ABLOCK','MANUFACTURER','84LF8HH01','Husqvarna','New',
+'Lightweight, comfortable and easy to use battery chainsaw.'
 )
 ;
 

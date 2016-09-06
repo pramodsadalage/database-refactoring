@@ -1,4 +1,4 @@
-<project name="EvolveDB" default="migrate" basedir="." xmlns:flyway="antlib:org.flywaydb.ant">
+<project name="EvolveDB" default="">
     <description>Ant build file for Evolving Databases</description>
 
     <tstamp>
@@ -6,25 +6,8 @@
     </tstamp>
 
     <property file="${basedir}/build.properties"/>
-    <property name="db.lib" value="libs"/>
+    <property name="db.lib" value="drivers"/>
     <property name="jdbc.driver.classpath" value="${db.lib}/ojdbc7.jar"/>
-    <!-- <property name="flyway.schemas" value="${db.username}"/> -->
-    <property name="flyway.locations" value="filesystem:db/migrations"/>
-    <property name="flyway.sqlMigrationPrefix" value=""/>
-    <property name="flyway.sqlMigrationSeparator" value="_"/>
-    <property name="flyway.table" value="DB_VERSION"/>
-    <property name="flyway.baselineOnMigrate" value="false"/>
-
-  <path id="flyway.classpath">
-      <fileset dir="${db.lib}" includes="*.jar"/>
-  </path>
-
-  <taskdef resource="org/flywaydb/ant/antlib.xml" uri="antlib:org.flywaydb.ant">
-    <classpath>
-        <pathelement location="${db.lib}/flyway-core-4.0.3.jar"/>
-        <pathelement location="${db.lib}/flyway-ant-4.0.3.jar"/>
-    </classpath>
-  </taskdef>
 
   <target name="createschema" description="create a schema as defined in the user properties">
     <echo message="Admin UserName: ${db.system.username}"/>
@@ -46,15 +29,13 @@
           DROP USER ${db.username} cascade ;
       </sql>
   </target>
-
   <target name="dbcode">
       <sql driver="${db.driver.name}"
            url="${db.url}"
            userid="${db.username}"
            password="${db.password}"
-           classpath="${jdbc.driver.classpath}"
-           delimiter="/">
-          <fileset dir="db/code" includes="*.sql"/>
+           classpath="${jdbc.driver.classpath}">
+          <fileset dir="code" includes="R__view*.sql"/>
       </sql>
   </target>
   <target name="testdata">
@@ -63,11 +44,7 @@
            userid="${db.username}"
            password="${db.password}"
            classpath="${jdbc.driver.classpath}" delimiter=";">
-          <fileset dir="db/testdata" includes="*.sql"/>
+          <fileset dir="testdata" includes="*.sql"/>
       </sql>
-  </target>
-
-  <target name="migrate">
-      <flyway:migrate password="${db.password}" url="${db.url}" user="${db.username}"> </flyway:migrate>
   </target>
 </project>
