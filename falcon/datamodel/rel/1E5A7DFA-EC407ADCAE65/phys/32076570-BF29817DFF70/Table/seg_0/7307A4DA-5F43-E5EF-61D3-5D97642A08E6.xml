@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="schema_version" directorySegmentName="seg_0" id="7307A4DA-5F43-E5EF-61D3-5D97642A08E6">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="script" id="4D339771-CE49-A5DD-AB1D-AA46525E68D4">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="installed_rank" id="570907B8-002F-77BD-8024-B01BDF61D56C">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="version" id="60A2AD61-3DAA-4120-27B0-7ADECBDC97FB">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="installed_by" id="6C3F669D-F81D-2292-10FC-3EAD35CBE6AB">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="execution_time" id="B5D8B81D-FB8B-78A1-E104-C83B8251D346">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="installed_on" id="BBF54E2C-33E1-403A-E273-F796B99A6F73">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="type" id="E30525D2-1C8E-E0D4-B205-7D014FE64069">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="success" id="E768D0DF-55BE-C0E1-E4A8-DB0F35B1D3A9">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="description" id="EF41CC05-4C35-1055-B14D-1C83A654C066">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="checksum" id="FDCD9259-D1CD-F1DC-E129-449C19DC1510">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="schema_version_s_idx" id="50E7BDC7-255A-A116-3741-CADD0557C67B">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="schema_version_pk" id="96A4535A-289D-8A42-35D9-765219CF7299">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="schema_version_pk" id="E1E1C5FC-AD6B-5322-DFAC-B3A23F24BD0D">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,6 @@
+FK from EquipmentType to Equipment.
+
+Equipment.Notes has Engine then EquipmentType = engine
+Equipment.Notes has Lift then EquipmentType = lifttruck
+Equipment.Notes has "heavy duty" then EquipmentType = Construction
+All others are Other

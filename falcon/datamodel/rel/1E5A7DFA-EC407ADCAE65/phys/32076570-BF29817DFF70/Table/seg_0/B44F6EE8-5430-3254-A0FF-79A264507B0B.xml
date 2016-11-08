@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EQUIPMENTCATEGORY" directorySegmentName="seg_0" id="B44F6EE8-5430-3254-A0FF-79A264507B0B">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NAME" id="559D545A-B68D-3A37-8A5D-E487F8ED15E9">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EQUIPMENTCATEGORYID" id="CED2CD54-AF5C-8587-0FEA-53F191B01987">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_EQUIPMENTCATEGORY" id="EFCC08D4-1253-932F-22D9-76DD7696DBDD">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_EQUIPMENTCATEGORY" id="BC1BB55C-6360-391F-E2B0-5B699ED6D876">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

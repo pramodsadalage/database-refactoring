@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FunctionOracle class="oracle.dbtools.crest.model.design.storage.oracle.FunctionOracle" name="ISTODAYMONDAY" directorySegmentName="seg_0" id="AD32DAA9-C857-4DE8-43DC-086479BEC6B2">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:22 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<source>CREATE OR REPLACE FUNCTION ISTODAYMONDAY &lt;br/&gt; RETURN BOOLEAN&lt;br/&gt; IS&lt;br/&gt;   today_day VARCHAR(20) :=NULL;&lt;br/&gt; BEGIN&lt;br/&gt;     SELECT TO_CHAR(SYSDATE, &apos;DAY&apos;) INTO today_day FROM DUAL;&lt;br/&gt;     IF(today_day = &apos;MONDAY&apos;) THEN&lt;br/&gt;     BEGIN&lt;br/&gt;     	RETURN TRUE;&lt;br/&gt;     END;&lt;br/&gt;     ELSE&lt;br/&gt;      RETURN FALSE;&lt;br/&gt;     END IF;&lt;br/&gt;     EXCEPTION&lt;br/&gt;         WHEN NO_DATA_FOUND THEN&lt;br/&gt;     BEGIN&lt;br/&gt;     	RETURN FALSE;&lt;br/&gt;     END;&lt;br/&gt;     WHEN OTHERS THEN RAISE;&lt;br/&gt; END;</source>
+</FunctionOracle>

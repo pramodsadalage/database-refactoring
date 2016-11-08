@@ -1,0 +1,11 @@
+Introduce LocationId on Equipment.
+
+New table
+New column on equipment.
+FK to new table.
+Migrate Data
+SELECT REGEXP_SUBSTR(t.LOCATION, '[^.]+', 1, 1) line_1,
+       REGEXP_SUBSTR(t.LOCATION, '[^ ]+', 1, 5) city,
+       REGEXP_SUBSTR(t.LOCATION, '[^ ]+', 1, 6) state,
+       REGEXP_SUBSTR(t.LOCATION, '[^ ]+', 1, 7) zip
+FROM equipment t;

@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B44F6EE8-5430-3254-A0FF-79A264507B0B" name="EQUIPMENTCATEGORY">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>8F074431-259D-7A1C-7E64-7F385CECAD3E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EQUIPMENTCATEGORYID" id="CED2CD54-AF5C-8587-0FEA-53F191B01987">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>E6A6D656-4D9B-1A4B-F674-7A00B1D3C71C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>50A586D8-51B7-2228-6890-7357A5CBE9B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="559D545A-B68D-3A37-8A5D-E487F8ED15E9">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>938EC4C3-F0BA-9200-B825-3F44046A8BE5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D0C6936E-391A-A727-89C7-5B446FD3A574</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC1BB55C-6360-391F-E2B0-5B699ED6D876" name="PK_EQUIPMENTCATEGORY">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>A69B145A-718E-6BA6-F655-F637214B27C4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CED2CD54-AF5C-8587-0FEA-53F191B01987"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EFCC08D4-1253-932F-22D9-76DD7696DBDD" name="PK_EQUIPMENTCATEGORY">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>B655A956-E739-0666-32CE-8869A1EDCAFB</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CED2CD54-AF5C-8587-0FEA-53F191B01987"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

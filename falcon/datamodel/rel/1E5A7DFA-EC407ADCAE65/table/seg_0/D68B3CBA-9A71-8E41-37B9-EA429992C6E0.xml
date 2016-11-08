@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D68B3CBA-9A71-8E41-37B9-EA429992C6E0" name="EQUIPMENTSTATUS">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>A54C16D9-AB08-54EC-3D34-AE5542ABBE26</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EQUIPMENTSTATUSID" id="277B1097-1957-A26C-1C8C-953B5971F122">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>B55C3A23-C561-EB2C-9977-B98DFC051499</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>50A586D8-51B7-2228-6890-7357A5CBE9B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="67C06117-D9C3-C05D-1FAC-514334D182D8">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>74DB070D-02E5-7AB9-F4BF-8D05E063A55E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D0C6936E-391A-A727-89C7-5B446FD3A574</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B5EF552-687F-B38C-908E-97574725EE26" name="PK_EQUIPMENTSTATUS">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>74437820-2272-7007-A316-F1618B1F4919</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="277B1097-1957-A26C-1C8C-953B5971F122"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="130BE38B-6F02-6375-303A-7EBF63A7260F" name="PK_EQUIPMENTSTATUS">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>9AA77C37-BC98-DCF4-29E0-3DD30E617F48</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="277B1097-1957-A26C-1C8C-953B5971F122"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

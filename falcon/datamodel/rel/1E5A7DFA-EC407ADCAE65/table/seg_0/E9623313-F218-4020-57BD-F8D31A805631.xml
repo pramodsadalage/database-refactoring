@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9623313-F218-4020-57BD-F8D31A805631" name="EQUIPMENTTYPE">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>C6D4C27D-DB93-3C78-F133-24A9F4F4D255</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EQUIPMENTTYPEID" id="D3BA85B2-9364-B5AF-1E5C-8EB33800C23D">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>8DB9DE8D-F606-2D58-6895-8CB59AA4113B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>50A586D8-51B7-2228-6890-7357A5CBE9B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="A9251954-FBB1-BB36-A86E-303AE1A5EA9F">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>A3240BE8-A1D6-B363-0756-00F83A5A94D2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D0C6936E-391A-A727-89C7-5B446FD3A574</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95121339-70C1-23D5-FCDC-1ED964C9AEBC" name="PK_EQUIPMENTTYPE">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>D6F8FC69-54FD-8E30-0A4F-CD9262A1CD95</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3BA85B2-9364-B5AF-1E5C-8EB33800C23D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B132179-A509-0335-6164-998B005539C1" name="PK_EQUIPMENTTYPE">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>536D5A1D-0FAB-6D6D-99B5-D94ED5B4896B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3BA85B2-9364-B5AF-1E5C-8EB33800C23D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

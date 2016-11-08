@@ -1,0 +1,188 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7307A4DA-5F43-E5EF-61D3-5D97642A08E6" name="schema_version">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>A5335687-93A7-600F-73BB-A7A5FD806716</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="installed_rank" id="570907B8-002F-77BD-8024-B01BDF61D56C">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>B3BC42C0-7456-DC57-83C2-7C237A3F0B13</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>622703D8-5618-392B-2A03-3E8047F36848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="version" id="60A2AD61-3DAA-4120-27B0-7ADECBDC97FB">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>53E37FF4-6785-92DC-79D7-69736706AED9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>45B310D5-3D3D-BCB6-8287-3332911E187D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="EF41CC05-4C35-1055-B14D-1C83A654C066">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>C395C9A4-724E-47D5-7393-9F3C75DFC44D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EAAF4F33-1DAE-AA2F-004D-D196CE239595</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="E30525D2-1C8E-E0D4-B205-7D014FE64069">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>4551F7AE-FE3C-336E-8568-28AC18A82AF7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>468CB460-C618-A52B-D8F8-DDDA667A598C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="script" id="4D339771-CE49-A5DD-AB1D-AA46525E68D4">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>9E0A50B8-222B-72EC-42E3-7760DE77AE1F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A8BD1B81-56F4-B76A-A39F-2A24CA40FA59</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="checksum" id="FDCD9259-D1CD-F1DC-E129-449C19DC1510">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>9B07B652-7500-90A0-3C1E-BBE7AA73C99C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>622703D8-5618-392B-2A03-3E8047F36848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="installed_by" id="6C3F669D-F81D-2292-10FC-3EAD35CBE6AB">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>DA3BD7C6-7915-4D9A-AC98-69F333A1E04B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C9994A36-249B-57EF-E56D-3543FCAF4BA2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="installed_on" id="BBF54E2C-33E1-403A-E273-F796B99A6F73">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>6631E45E-C440-009F-7962-5E7AF1756258</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>9254E02C-A5B6-AF68-CCCA-AF50432123DA</domain>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="execution_time" id="B5D8B81D-FB8B-78A1-E104-C83B8251D346">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>01D8B551-D648-29C3-E1F9-8258415CB1F4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>622703D8-5618-392B-2A03-3E8047F36848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="success" id="E768D0DF-55BE-C0E1-E4A8-DB0F35B1D3A9">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>4B772F50-2CEB-4255-1EA5-37EFC65C8CE1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F7B66DC6-94BE-F50D-C6D4-80B0BA618F45</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1E1C5FC-AD6B-5322-DFAC-B3A23F24BD0D" name="schema_version_pk">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>F3261717-5661-528A-56AD-79D111028653</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="570907B8-002F-77BD-8024-B01BDF61D56C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96A4535A-289D-8A42-35D9-765219CF7299" name="schema_version_pk">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>1F5C046F-E81A-7B11-5C7F-7D4A31C960EF</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="570907B8-002F-77BD-8024-B01BDF61D56C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50E7BDC7-255A-A116-3741-CADD0557C67B" name="schema_version_s_idx">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>0B3113E4-8A84-0A2C-DE33-31F5D343852E</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E768D0DF-55BE-C0E1-E4A8-DB0F35B1D3A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="S_EQUIPMENTUSAGE" directorySegmentName="seg_0" id="3EB14B88-4A0D-465A-72FD-3079A1F207D1">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:22 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<cache>20</cache>
+<incrementBy>1</incrementBy>
+<maxValue>9999999999999999999999999999</maxValue>
+<minValue>1</minValue>
+<startWith>41</startWith>
+</SequenceOraclev10g>

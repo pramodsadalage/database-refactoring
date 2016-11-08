@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="957AF10A-5F7A-590C-E60B-39DD8A2DA858" name="CONTACTTYPE">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>330544B5-51DC-C40A-6987-C6A02EDDE484</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONTACTTYPEID" id="C8367893-F8BD-9D1F-DD85-FB13526D38EA">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>8F97F913-1344-EFB9-5373-E56B3508B149</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>50A586D8-51B7-2228-6890-7357A5CBE9B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="2B55A8E4-B3CF-B101-157A-456BF695D7BB">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>4FAD0F32-B2F3-A36D-356C-4FAACC87C9D3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D0C6936E-391A-A727-89C7-5B446FD3A574</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD0D7C44-38B6-B568-0515-F5E44B8641CF" name="PK_CONTACTTYPE">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>E1947440-D0A2-C877-9438-6447485DE6D2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8367893-F8BD-9D1F-DD85-FB13526D38EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0E779FF-1892-C0F1-E808-0AD8B093183A" name="PK_CONTACTTYPE">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>234D2016-53BA-BB6D-9D41-E317634C12B3</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8367893-F8BD-9D1F-DD85-FB13526D38EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

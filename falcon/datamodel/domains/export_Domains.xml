@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="export_Domains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50" id="45B310D5-3D3D-BCB6-8287-3332911E187D">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>50</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_20" id="468CB460-C618-A52B-D8F8-DDDA667A598C">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>20</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_18_0_0" id="50A586D8-51B7-2228-6890-7357A5CBE9B7">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>18</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="5B842064-A03E-B9FD-438D-5372EDE00BBD">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_*_0_0" id="622703D8-5618-392B-2A03-3E8047F36848">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>*</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_60" id="7940B998-E3D9-20E2-F91E-8FD11B8CC90A">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>60</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Timestamp_6_0_0" id="9254E02C-A5B6-AF68-CCCA-AF50432123DA">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>6</dataTypePrecision>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT015</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_10" id="943A46B7-0494-1B4C-4F98-57B11B9C0652">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>10</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_1000" id="A8BD1B81-56F4-B76A-A39F-2A24CA40FA59">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>1000</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_4000" id="BFF3C4CE-396B-A4E3-2797-A1A74B129CAF">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>4000</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="C9994A36-249B-57EF-E56D-3543FCAF4BA2">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>100</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_3" id="CB4E57F0-8465-0617-31E7-FBC2D5EFCD48">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>3</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_30" id="D0C6936E-391A-A727-89C7-5B446FD3A574">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>30</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_2_0_0" id="D8799FC8-5A99-9B24-2523-D438AD45D69E">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>2</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_2" id="DF488EC5-0019-FB34-1A99-B8CAC8AB1A50">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>2</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_200" id="EAAF4F33-1DAE-AA2F-004D-D196CE239595">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>200</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_1_0_0" id="F7B66DC6-94BE-F50D-C6D4-80B0BA618F45">
+         <createdBy>psadalag</createdBy>
+         <createdTime>2016-11-07 17:59:51 UTC</createdTime>
+         <ownerDesignName>datamodel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>1</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>export_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

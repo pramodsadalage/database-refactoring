@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8EF36841-3D46-B2CA-B021-9E5EED68DEA7" name="CURRENCY">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>F8CB4E6C-E576-A094-0E04-3D416AEC32B0</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CURRENCYID" id="99164218-DFD0-C2BF-C8B5-73FFC7F54E28">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>184D4BBC-F79F-A46D-33D1-8F869FA2BFC8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>50A586D8-51B7-2228-6890-7357A5CBE9B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="F5ABFF01-CF4F-9585-036D-152F8E25F873">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>5D2E4F08-FEB8-F8DD-74DE-4F5176D13E76</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D0C6936E-391A-A727-89C7-5B446FD3A574</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODE" id="136C498B-2F03-DF91-CF74-3199E0073DA9">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>38A5EE6F-BF56-545B-A36A-5C16390756A9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CB4E57F0-8465-0617-31E7-FBC2D5EFCD48</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B67EC01C-A08B-F794-16D9-19938B35A161" name="PK_CURRENCY">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>72AF3330-9BB0-F405-CA31-0A3971648AE5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99164218-DFD0-C2BF-C8B5-73FFC7F54E28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="679F1BC7-50BD-6FA8-E7EF-3236F7A4CB29" name="UIDX_CURRENCY_CODE">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>89784708-D7DE-CE16-8CFA-C5200EEC45B5</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="136C498B-2F03-DF91-CF74-3199E0073DA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26707D62-6ED7-35CF-4506-C6AD844F19B9" name="PK_CURRENCY">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>1653FDFD-9C7F-8ABF-CCC2-5320DCB4D20A</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99164218-DFD0-C2BF-C8B5-73FFC7F54E28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

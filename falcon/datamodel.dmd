@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="datamodel" id="666897EE-8A21-DBDE-1487-032EBF34E045" version="3.5">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:56:19 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>666897EE-8A21-DBDE-1487-032EBF34E045</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="6824B723-0018-28AD-E598-2A50379AED16">
+<designStoragePath>/export</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

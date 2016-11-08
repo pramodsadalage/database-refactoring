@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="6CA7D923-D85D-A32E-1CDA-6EC9A6C2FD22" name="V_EQUIPMENT_MANUFACTURER">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>E9A8A2FF-B3EB-DDEB-5EFB-C2ACACCA0071</importedID>
+<userDefined>true</userDefined>
+<userDefinedSQL>SELECT&lt;br/&gt;  e.equipmentid,&lt;br/&gt;  e.description,&lt;br/&gt;  m.name as manufacturer_name&lt;br/&gt;FROM equipment e, manufacturer m&lt;br/&gt;WHERE e.manufacturerid = m.manufacturerid</userDefinedSQL>
+<usedContainers>
+<container alias="e" containerID="DF784AF7-D31D-B138-864F-2AADCDB60652"/>
+<container alias="m" containerID="91D5EC55-F9BF-1FB0-FEBB-B052E986DCDC"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="EQUIPMENTID" id="FCCF0F59-B0EF-E238-4183-B53C93574F46">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>EQUIPMENTID</alias>
+<dataType>NUMBER (18)</dataType>
+<headerAlias>EQUIPMENTID</headerAlias>
+<expression>equipmentid</expression>
+<reference>false</reference>
+<referencedColumn>C0381AEA-17D7-1ACF-3B97-3EFC8805F0C9</referencedColumn>
+<table>DF784AF7-D31D-B138-864F-2AADCDB60652</table>
+<viewID>6CA7D923-D85D-A32E-1CDA-6EC9A6C2FD22</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DESCRIPTION" id="57F4BF70-CEB4-DF20-A9FE-A72E65F58F6E">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DESCRIPTION</alias>
+<dataType>VARCHAR2 (200)</dataType>
+<headerAlias>DESCRIPTION</headerAlias>
+<expression>description</expression>
+<reference>false</reference>
+<referencedColumn>299463DA-1D4A-960F-5952-1E173549642D</referencedColumn>
+<table>DF784AF7-D31D-B138-864F-2AADCDB60652</table>
+<viewID>6CA7D923-D85D-A32E-1CDA-6EC9A6C2FD22</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="MANUFACTURER_NAME" id="AD75AF32-B4E3-A9BA-63EB-BFB138398E99">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MANUFACTURER_NAME</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<headerAlias>MANUFACTURER_NAME</headerAlias>
+<expression>name</expression>
+<reference>false</reference>
+<referencedColumn>75E49EAD-9F8A-EBB7-1DD3-2FD6713E1930</referencedColumn>
+<table>91D5EC55-F9BF-1FB0-FEBB-B052E986DCDC</table>
+<viewID>6CA7D923-D85D-A32E-1CDA-6EC9A6C2FD22</viewID>
+</viewElement>
+</viewElements>
+</TableView>

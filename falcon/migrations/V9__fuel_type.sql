@@ -25,6 +25,7 @@ INSERT INTO fueltype (fueltypeid,name) VALUES ( s_fueltype.nextval, 'Coal')
 ALTER TABLE equipment ADD fueltypeid NUMBER(18) NULL
 ;
 
+--Business Says Everything existing is Diesel 
 UPDATE equipment SET fueltypeid =
   (SELECT fueltypeid FROM fueltype WHERE name = 'Diesel')
   WHERE fueltypeid IS NULL

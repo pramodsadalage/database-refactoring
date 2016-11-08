@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="77F4088B-0503-18BE-2652-BE80497595A4" name="EQUIPMENTUSAGE">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>F04483AD-99A6-4E6B-F155-E0E58393761D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EQUIPMENTUSAGEID" id="2076BC87-909F-F20D-70CD-F44F49BA9D92">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>DD778A7A-9A60-A973-4E86-187B4E471941</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>50A586D8-51B7-2228-6890-7357A5CBE9B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EQUIPMENTCATEGORYID" id="14DA2D47-C040-C880-C358-8ABC6E73FE73">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>9F5534F6-D1D3-5EEB-3379-F2C1F9E70775</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>50A586D8-51B7-2228-6890-7357A5CBE9B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFE551A3-7E9D-203A-E97F-DB54E98792DC" referredColumn="CED2CD54-AF5C-8587-0FEA-53F191B01987"/>
+</associations>
+</Column>
+<Column name="NAME" id="DA518790-ED95-B70A-A7FE-5F6B284A79F5">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>8E3A4E14-8342-84D0-F04B-0A2158B685CF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D0C6936E-391A-A727-89C7-5B446FD3A574</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8F1F973-C6DE-84CC-D9E0-8AE7290937C0" name="PK_EQUIPMENTUSAGE">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>4CA8449B-AD6A-2FD6-C33C-DDA51E642FE8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2076BC87-909F-F20D-70CD-F44F49BA9D92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC2B491E-C5BB-AAFD-10F6-8E9DD915BCDD" name="PK_EQUIPMENTUSAGE">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>70BC9F52-3440-FEF6-B083-61AF3284AEF3</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2076BC87-909F-F20D-70CD-F44F49BA9D92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13082F29-D5E4-DEC2-237A-78EE1A94CD6E" name="UIDX_EQUIPMENTUSAGE_CAT_NAME">
+<sourceDDLFile>export.sql</sourceDDLFile>
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<importedID>CCFCF505-A8C5-5D3A-BED1-08BCB8EE44AE</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14DA2D47-C040-C880-C358-8ABC6E73FE73"/>
+<colUsage columnID="DA518790-ED95-B70A-A7FE-5F6B284A79F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47A26542-763C-9AEF-E6F4-BA780E77907E" name="FK_EQUIPMENTUSAGE_CATEGORY">
+<createdBy>psadalag</createdBy>
+<createdTime>2016-11-07 17:59:51 UTC</createdTime>
+<ownerDesignName>datamodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14DA2D47-C040-C880-C358-8ABC6E73FE73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
