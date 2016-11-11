@@ -1,4 +1,4 @@
-<project name="EvolveDB" default="">
+<project name="EvolveDB" default="package">
     <description>Ant build file for Evolving Databases</description>
 
     <tstamp>
