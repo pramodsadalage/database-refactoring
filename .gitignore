@@ -12,3 +12,4 @@ puppet/.tmp
 REVISION
 *.war
 .DS_Store
+**/target/*

@@ -9,6 +9,9 @@
     <property name="db.lib" value="drivers"/>
     <property name="flyway.conf.dir" value="${basedir}/conf"/>
     <property name="jdbc.driver.classpath" value="${db.lib}/ojdbc7.jar"/>
+    <property name="build.dir" value="target"/>
+    <property name="package.dir" location="${build.dir}/db-package"/>
+
 
 <!-- Create a schema for the name provided in the build.properties file, schema is same as user -->
   <target name="createschema" description="create a schema as defined in the user properties">
@@ -77,5 +80,25 @@
       <replace file="${flyway.conf.dir}/flyway.conf" token="@db.password@" value="${db.password}"/>
       <replace file="${flyway.conf.dir}/flyway.conf" token="@db.url@" value="${db.url}"/>
   </target>
+
+  <target name="package">
+      <zip destfile="${package.dir}/db-migrate.zip">
+          <zipfileset dir="${basedir}">
+            <include name="migrations/**"/>
+            <include name="lib/**"/>
+            <include name="drivers/**"/>
+            <include name="conf/**"/>
+            <include name="jars/**"/>
+            <include name="code/**"/>
+          </zipfileset>
+          <zipfileset dir="${basedir}" includes="flyway" filemode="755"/>
+          <zipfileset dir="${basedir}" includes="flyway.cmd" filemode="755"/>
+      </zip>
+  </target>
+
+<target name="mkdirs">
+  <mkdir dir="${build}"/>
+  <mkdir dir="${dist}"/>
+</target>
 
 </project>
