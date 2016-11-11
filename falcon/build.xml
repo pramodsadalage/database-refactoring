@@ -81,7 +81,7 @@
       <replace file="${flyway.conf.dir}/flyway.conf" token="@db.url@" value="${db.url}"/>
   </target>
 
-  <target name="package">
+  <target name="package" depends="mkdirs">
       <zip destfile="${package.dir}/db-migrate.zip">
           <zipfileset dir="${basedir}">
             <include name="migrations/**"/>
