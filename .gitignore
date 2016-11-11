@@ -13,3 +13,4 @@ REVISION
 *.war
 .DS_Store
 **/target/*
+build.properties
