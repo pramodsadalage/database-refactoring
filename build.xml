@@ -91,6 +91,7 @@
             <include name="jars/**"/>
             <include name="code/**"/>
             <include name="*.properties"/>
+            <include name="build.xml"/>
           </zipfileset>
           <zipfileset dir="${basedir}" includes="flyway" filemode="755"/>
           <zipfileset dir="${basedir}" includes="flyway.cmd" filemode="755"/>
