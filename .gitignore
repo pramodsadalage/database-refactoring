@@ -14,3 +14,4 @@ REVISION
 .DS_Store
 **/target/*
 build.properties
+conf/flyway.conf
