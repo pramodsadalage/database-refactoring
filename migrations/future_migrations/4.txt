@@ -1,0 +1,8 @@
+Extract Equipment Acquisition into a table of its own
+
+--Split Table
+acquired_date DATE NOT NULL,
+acquired_by VARCHAR2(30) NOT NULL,
+acquired_from VARCHAR2(30) NOT NULL,
+
+and add FK to Equipment.

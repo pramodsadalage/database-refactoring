@@ -1,0 +1,7 @@
+Rename starting_miles to acquired_odometer
+
+--Rename Column
+--Old-new
+--Put trigger to sync data
+--Migrate existing Data
+--Can you support read using virtual columns?

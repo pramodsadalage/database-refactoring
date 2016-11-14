@@ -1,0 +1,14 @@
+CREATE OR REPLACE TRIGGER SynchronizeMiles
+BEFORE INSERT OR UPDATE
+ON EQUIPMENT
+REFERENCING OLD AS OLD NEW AS NEW
+FOR EACH ROW
+BEGIN
+	IF :NEW.acquired_odometer IS NULL THEN
+		:NEW.acquired_odometer := :NEW.starting_miles;
+	END IF;
+	IF :NEW.starting_miles IS NULL THEN
+		:NEW.starting_miles := :NEW.acquired_odometer;
+	END IF;
+END;
+/

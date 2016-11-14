@@ -1,0 +1,8 @@
+SELECT
+e.equipmentid, e.description, ft.name fueltype, es.name equipmentstatus
+FROM
+equipment e, EQUIPMENTSTATUS es, fueltype ft
+WHERE
+e.EQUIPMENTSTATUSID = es.equipmentstatusid
+AND e.FUELTYPEID = ft.FUELTYPEID
+;

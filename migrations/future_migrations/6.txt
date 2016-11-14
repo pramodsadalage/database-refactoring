@@ -1,0 +1,5 @@
+--Introduce View
+EquipmentID,
+Description
+FuelType.Name
+EquipmentStatus.name
