@@ -5,3 +5,6 @@ Rename starting_miles to acquired_odometer
 --Put trigger to sync data
 --Migrate existing Data
 --Can you support read using virtual columns?
+ALTER TABLE equipment ADD (starting_miles AS (acquired_odometer*1));
+--can you provide KM with virtual columns?
+ALTER TABLE equipment ADD (starting_km AS (acquired_odometer*1.6));
