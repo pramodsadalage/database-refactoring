@@ -90,6 +90,7 @@
             <include name="conf/**"/>
             <include name="jars/**"/>
             <include name="code/**"/>
+            <include name="*.properties"/>
           </zipfileset>
           <zipfileset dir="${basedir}" includes="flyway" filemode="755"/>
           <zipfileset dir="${basedir}" includes="flyway.cmd" filemode="755"/>
