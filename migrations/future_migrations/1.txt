@@ -1,6 +1,37 @@
 FK from EquipmentType to Equipment.
 
 Equipment.Notes has Engine then EquipmentType = engine
-Equipment.Notes has Lift then EquipmentType = lifttruck
+Equipment.Notes has Lift then EquipmentType = lift
 Equipment.Notes has "heavy duty" then EquipmentType = Construction
 All others are Other
+
+Example -- script
+
+ALTER TABLE equipment ADD equipmenttypeid NUMBER(18) NULL
+;
+
+UPDATE equipment
+  SET equipmenttypeid = (SELECT equipmenttypeid FROM equipmenttype WHERE name = 'Lift Truck')
+  WHERE INSTR(upper(notes), 'LIFT') > 0
+;
+UPDATE equipment
+  SET equipmenttypeid = (SELECT equipmenttypeid FROM equipmenttype WHERE name = 'Engine')
+  WHERE INSTR(upper(notes), 'ENGINE') > 0
+;
+UPDATE equipment
+  SET equipmenttypeid = (SELECT equipmenttypeid FROM equipmenttype WHERE name = 'Construction')
+  WHERE INSTR(upper(notes), 'HEAVY DUTY') > 0
+;
+
+UPDATE equipment
+  SET equipmenttypeid = (SELECT equipmenttypeid FROM equipmenttype WHERE name = 'Other')
+  WHERE equipmenttypeid IS NULL
+;
+
+ALTER TABLE equipment MODIFY equipmenttypeid NOT NULL
+;
+
+ALTER TABLE equipment
+  ADD (CONSTRAINT fk_equipment_equipmenttype FOREIGN KEY (equipmenttypeid)
+  REFERENCES equipmenttype)
+;

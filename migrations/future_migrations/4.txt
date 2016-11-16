@@ -6,3 +6,37 @@ acquired_by VARCHAR2(30) NOT NULL,
 acquired_from VARCHAR2(30) NOT NULL,
 
 and add FK to Equipment.
+
+
+CREATE TABLE acquisitioninfo
+  (
+    acquisitioninfoid NUMBER(18) NOT NULL,
+    equipmentid       NUMBER(18) NOT NULL,
+    acquiredfrom      VARCHAR2(60) NOT NULL,
+    acquiredby        VARCHAR2(60) NOT NULL,
+    acquireddate      DATE NOT NULL,
+    CONSTRAINT pk_acquisitioninfo PRIMARY KEY (acquisitioninfoid)
+  ) ;
+CREATE SEQUENCE s_acquisitioninfo START WITH 1 ;
+INSERT
+  INTO acquisitioninfo
+    (
+      acquisitioninfoid,
+      equipmentid,
+      acquiredfrom,
+      acquiredby,
+      acquireddate
+    )
+  SELECT s_acquisitioninfo.nextval,
+    equipmentid,
+    acquired_from,
+    acquired_by ,
+    acquired_date
+  FROM equipment ;
+
+ALTER TABLE acquisitioninfo
+ADD (CONSTRAINT fk_acquisitioninfo_equipment
+  FOREIGN KEY (equipmentid) REFERENCES equipment) ;
+
+-- Drop the columns in Equipment?
+-- Does usage need to change?

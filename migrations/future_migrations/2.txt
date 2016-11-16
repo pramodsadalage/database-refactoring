@@ -1,2 +1,39 @@
 --Introduce Column
 Add Default CountryId on Currency
+
+
+
+ALTER TABLE currency ADD defaultcountryid NUMBER(18);
+
+update currency
+  set defaultcountryid = (select countryid from country where code = 'US')
+  where code = 'USD'
+;
+
+update currency
+  set defaultcountryid = (select countryid from country where code = 'MX')
+  where code = 'MXN'
+;
+
+update currency
+  set defaultcountryid = (select countryid from country where code = 'CN')
+  where code = 'CNY'
+;
+
+update currency
+  set defaultcountryid = (select countryid from country where code = 'ES')
+  where code = 'EUR'
+;
+
+update currency
+  set defaultcountryid = (select countryid from country where code = 'IN')
+  where code = 'INR'
+;
+
+ALTER TABLE currency
+  ADD (CONSTRAINT fk_currency_country FOREIGN KEY (defaultcountryid)
+  REFERENCES country)
+;
+
+ALTER TABLE currency MODIFY defaultcountryid NOT NULL
+;

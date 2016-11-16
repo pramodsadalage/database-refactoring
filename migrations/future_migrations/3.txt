@@ -9,3 +9,50 @@ SELECT REGEXP_SUBSTR(t.LOCATION, '[^.]+', 1, 1) line_1,
        REGEXP_SUBSTR(t.LOCATION, '[^ ]+', 1, 6) state,
        REGEXP_SUBSTR(t.LOCATION, '[^ ]+', 1, 7) zip
 FROM equipment t;
+
+-- scripts
+
+CREATE TABLE location
+  (
+    locationid NUMBER(18) NOT NULL,
+    line1      VARCHAR2(60) NOT NULL,
+    city       VARCHAR2(60) NOT NULL,
+    state      VARCHAR2(60) NOT NULL,
+    zip        VARCHAR2(10) NOT NULL,
+    CONSTRAINT pk_location PRIMARY KEY (locationid)
+  ) ;
+CREATE SEQUENCE s_location START WITH 1 ;
+INSERT INTO location
+  ( locationid, line1, city, state, zip
+  )
+SELECT s_location.nextval,
+  REGEXP_SUBSTR(LOCATION, '[^.]+.', 1, 1) line_1,
+  REGEXP_SUBSTR(LOCATION, '[^ ]+', 1, 4) city,
+  REGEXP_SUBSTR(LOCATION, '[^ ]+', 1, 5) state,
+  REGEXP_SUBSTR(LOCATION, '[^ ]+', 1, 6) zip
+FROM equipment ;
+
+ALTER TABLE equipment ADD locationid NUMBER(18);
+
+UPDATE equipment e
+SET e.locationid =
+  (SELECT l.locationid
+  FROM location l
+  WHERE l.LINE1
+    ||' '
+    ||l.CITY
+    ||' '
+    ||l.state
+    ||' '
+    ||zip = e.location
+  )
+;
+
+ALTER TABLE equipment ADD (CONSTRAINT fk_equipment_location
+FOREIGN KEY (locationid)
+REFERENCES location)
+;
+
+-- drop the location column now?
+-- make locationid not null?
+-- does the usage sql need to change?

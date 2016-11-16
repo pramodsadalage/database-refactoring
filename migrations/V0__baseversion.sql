@@ -31,7 +31,7 @@ serial_number,manufacturer,equipmentstatus,notes,location
 )
 VALUES
 (s_equipment.nextval,'JCB radial lift 135 skid steer', 18,5000, 3, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'JOHN DANIEL','PARKER JCB','55SWF4KB5GU167138','JCB','New',
-'The small platform JCB radial lift 135 skid steer,side door entry','202 E Randolph St. Chicago IL 60601'
+'The small platform JCB radial lift 135 skid steer,side door entry','202 Randolph St. Chicago IL 60601'
 )
 ;
 INSERT INTO equipment (
@@ -41,7 +41,7 @@ serial_number,manufacturer,equipmentstatus,notes,location
 )
 VALUES
 (s_equipment.nextval,'Core IC Cushion Forklift', 7,4000, 3, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'REENA GRAHAM' ,'Atlas Toyota Material Handling', '1FT8W3DT6GEC67986','Toyota','New',
-'Toyota’s Core IC Cushion Forklift is one of the most popular forklifts in North America. Warehousing and distribution applications','202 E Randolph St. Chicago IL 60601'
+'Toyota’s Core IC Cushion Forklift is one of the most popular forklifts in North America. Warehousing and distribution applications','47 Lake St. Chicago IL 60601'
 )
 ;
 INSERT INTO equipment (
@@ -51,7 +51,7 @@ serial_number,manufacturer,equipmentstatus,notes,location
 )
 VALUES
 (s_equipment.nextval,'VNL 430 The specialty haul sleeper', 34,10000, 3, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'PAUL MARKER','M and K Truck Centers','4V4NC9EH1HN971656','Volvo','New',
-'A versatile and affordable sleeper tractor, the VNL 430 is specially designed for the demands of long-distance bulk haul and specialty applications.','202 E Randolph St. Chicago IL 60601'
+'A versatile and affordable sleeper tractor, the VNL 430 is specially designed for the demands of long-distance bulk haul and specialty applications.','67 Huron St. Chicago IL 60601'
 )
 ;
 INSERT INTO equipment (
@@ -61,7 +61,7 @@ serial_number,manufacturer,equipmentstatus,notes,location
 )
 VALUES
 (s_equipment.nextval,'340AJ Articulating Boom Lifts', 4,1000, 6, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'CHARLES DAVIS','National Lift Truck' ,'19XFC2F53GE057360','JLG','New',
-'Environmentally-friendly Tier 4 diesel engine, Industry-leading terrainability','202 E Randolph St. Chicago IL 60601'
+'Environmentally-friendly Tier 4 diesel engine, Industry-leading terrainability','2457 Madison St. Chicago IL 60601'
 )
 ;
 INSERT INTO equipment (
@@ -72,7 +72,7 @@ serial_number,manufacturer,equipmentstatus,notes,location
 VALUES
 (s_equipment.nextval,'HL 757-9A', 40,3000, 6, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'ANDY SLOCKET','Martin Implement','5NPD84LF8HH019461','Hyundai','New',
 'Proven, reliable, fuel efficient, low emission, low noise Cummins Tier 4 Interim & EU Stage IIIB
-QSB6.7 engine','202 E Randolph St. Chicago IL 60601'
+QSB6.7 engine','34 Wacker St. Chicago IL 60601'
 )
 ;
 INSERT INTO equipment (
@@ -82,7 +82,7 @@ serial_number,manufacturer,equipmentstatus,notes,location
 )
 VALUES
 (s_equipment.nextval,'136Li', 0,0, 6, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'JULIE BLOCK','RUSSO POWER EQUIPMENT','84LF8HH01','Husqvarna','New',
-'Lightweight, comfortable and easy to use battery chainsaw.','202 E Randolph St. Chicago IL 60601'
+'Lightweight, comfortable and easy to use battery chainsaw.','79 Michigan St. Chicago IL 60601'
 )
 ;
 
@@ -93,6 +93,6 @@ serial_number,manufacturer,equipmentstatus,notes,location
 )
 VALUES
 (s_equipment.nextval,'M&HCV CONSTRUCK', 440,10000, 6, 'Months', to_date('09/01/2016','MM/DD/YYYY'), 'JACK FINK','SIYON MOTORS', '3VW2B7AJ4HM211291','Tata Motors','New',
-'A host of heavy duty features that ensure excellent performance under difficult conditions and significant reduction in cost of ownership.','202 E Randolph St. Chicago IL 60601'
+'A host of heavy duty features that ensure excellent performance under difficult conditions and significant reduction in cost of ownership.','892 Columbus St. Chicago IL 60601'
 )
 ;
